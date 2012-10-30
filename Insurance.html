@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://jquerymobile.com/test/css/themes/default/jquery.mobile.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://jquerymobile.com/test/js/jquery.mobile.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    Insurance
+                </h3>
+                <a data-role="button" data-transition="fade" data-theme="b" href="MainMenu.html" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="fade">Menu</a>
+				<div class="ui-popup-container ui-popup-active" id="popupMenu-popup" style="max-width: 1650px; top: 578px; left: 613.433px;" tabindex="0">
+					<div data-theme="a" id="popupMenu" data-role="popup" class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all" aria-disabled="false" data-disabled="false" data-shadow="true" data-corners="true" data-transition="none" data-position-to="origin">
+						<ul data-theme="b" style="min-width:210px;" data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+							<li><a href="Extras.html" class="ui-link-inherit">Extras</a></li>
+							<li><a href="links.html" class="ui-link-inherit">Links</a></li>
+							<li><a href="MainMenu.html" class="ui-link-inherit">Home</a></li>
+						</ul>
+					</div>
+				</div>	
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <h3>
+                    Cover at &lt;date&gt;
+                </h3>
+                <div data-role="collapsible-set" data-theme="" data-content-theme="">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Death Cover
+                        </h3>
+                        <h5>
+                            Amount $303,452.22
+                        </h5>
+                        <h5>
+                            Premium $51.47 per annum
+                        </h5>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            TPD Cover
+                        </h3>
+                        <h5>
+                            Amount $280,455.45
+                        </h5>
+                        <h5>
+                            Premium $56.41 per annum
+                        </h5>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Income Cover
+                        </h3>
+                        <h5>
+                            Amount $3250.44 per month
+                        </h5>
+                        <h5>
+                            Premium $60.75 per annum
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Super On-The-Go
+                </h3>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

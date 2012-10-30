@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://jquerymobile.com/test/css/themes/default/jquery.mobile.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://jquerymobile.com/test/js/jquery.mobile.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h4>
+                    Welcome
+                </h4>
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput1">
+                            Employer Number
+                        </label>
+                        <input name="employer_number" id="textinput1" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-mini="true">
+                        <label for="textinput2">
+                            Member Number
+                        </label>
+                        <input name="member_number" id="textinput2" placeholder="" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            Password
+                        </label>
+                        <input name="password" id="textinput3" placeholder="" value="" type="password" />
+                    </fieldset>
+                </div>
+                <a  id="btnSubmit" data-role="button" data-theme="b"> Enter </a> 
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Super On-The-Go
+                </h3>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $("#btnSubmit").click(sendRegistration);
+            });
+
+            function sendRegistration() {
+             
+                if ( ( $("#textinput1").val().length == 0) || ($("#textinput2").val().length == 0) || ($("#textinput3").val().length == 0)) {
+                     alert("Please enter your information!!");
+                     return;
+                 }
+				 
+                if ( ( $("#textinput1").val() != "123456") || ($("#textinput2").val() != "123456") || ($("#textinput3").val() != "qwerty")) {
+                     alert("Please enter your correct information!!");
+                     return;
+                 }
+				 
+                $.mobile.changePage("mainmenu.html", "flip", true, false);
+			}
+            //App custom javascript
+        </script>
+    </body>
+</html>

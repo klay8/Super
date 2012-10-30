@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://jquerymobile.com/test/css/themes/default/jquery.mobile.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://jquerymobile.com/test/js/jquery.mobile.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="fade" data-theme="b" href="AccountSummary.html" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left">
+                    Back
+                </a>
+                <h4>
+                    Death Benefit
+                </h4>
+                <a href="#popupMenu" data-rel="popup" data-role="button" data-inline="true" data-transition="fade">Menu</a>
+				<div class="ui-popup-container ui-popup-active" id="popupMenu-popup" style="max-width: 1650px; top: 578px; left: 613.433px;" tabindex="0">
+					<div data-theme="a" id="popupMenu" data-role="popup" class="ui-popup ui-body-a ui-overlay-shadow ui-corner-all" aria-disabled="false" data-disabled="false" data-shadow="true" data-corners="true" data-transition="none" data-position-to="origin">
+						<ul data-theme="b" style="min-width:210px;" data-inset="true" data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+							<li><a href="Extras.html" class="ui-link-inherit">Extras</a></li>
+							<li><a href="links.html" class="ui-link-inherit">Links</a></li>
+							<li><a href="MainMenu.html" class="ui-link-inherit">Home</a></li>
+						</ul>
+					</div>
+				</div>	
+            </div>
+            <div data-role="content" style="padding: 15px">
+                <div data-role="collapsible-set" data-theme="" data-content-theme="">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            Death Benefit at &lt;date&gt;
+                        </h3>
+                        <h4>
+                            Your benefit is made up of the following components
+                        </h4>
+                        <h5>
+                            Death cover amount $303,455.82
+                        </h5>
+                        <h5>
+                            Preserved amount $45,452.44
+                        </h5>
+                        <h5>
+                            Gross cash amount $30,412.85
+                        </h5>
+                        <h5>
+                            Tax (if applicable) ($5,425.87)
+                        </h5>
+                        <h5>
+                            Net cash amount $280,854.55
+                        </h5>
+                        <h4>
+                            Total balance $275,452.74
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Super On-The-Go
+                </h3>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>
